@@ -30,7 +30,7 @@
         </p>
         <div>
             <button>Call Us</button>
-            <a href="#" style="padding-left:15px;">Contact Us</a>
+            <a href="#C4" style="padding-left:15px;">Contact Us</a>
         </div>
         <br>
         <br>
@@ -162,7 +162,7 @@
                 practices described in this statement, plus any additional 
                 restrictions imposed by the source of the data.
             </p>
-            <form>
+            <form action="#" method="post" id="C4">
                 <label for="fname">Fullname*</label><br>
                 <input type="text" id="fname"  name="fname" placeholder="Fullname" required minlength="10" maxlength="20"><br>
                 <label for="email">Email*</label><br>
@@ -185,11 +185,55 @@
                 <input type="tel" id="phone" name="phone" placeholder="Please enter a valid phone number" pattern="[0-9]{11}" required><br>
                 <label for="message">Message*</label><br>
                 <textarea id="message" name="message" rows="5" cols="40" maxlength="100" required></textarea>
-
-                
+                <br>
+                <fieldset>
+                    <legend>How should we contact you?</legend>
+                    <label for="phone">
+                    <input type="radio" id="phone" name="contact_method" value="phone">
+                    Phone
+                    </label>
+                    <label for="email">
+                    <input type="radio" id="email" name="contact_method" value="email">
+                    Email
+                    </label>
+                    <label for="both">
+                    <input type="radio" id="both" name="contact_method" value="both">
+                    Both
+                    </label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>How did you hear about us?</legend>
+                    <label for="friend">
+                    <input type="checkbox" id="friend" name="friend" value="friend">
+                    Friend
+                    </label>
+                    <label for="tsa">
+                    <input type="checkbox" id="tsa" name="tsacademy" value="tsacademy">
+                    TS Academy
+                    </label>
+                    <label for="others">
+                    <input type="checkbox" id="others" name="Others" value="other">
+                    Others
+                    </label>
+                </fieldset>
+                <br>
+                <button type="Submit">Submit ></button>
             </form>
-
+            <br>
+            <hr>
         </section>
+        <footer>
+            <h3>About</h3>
+            <ul>
+                <li>How it works</li>
+                <li>Featured</li>
+                <li>Partnership</li>
+                <li>Business Relation</li>
+            </ul>
+            <hr style="border:inset;">
+            <small>2022 Pel Codeworld. All Rights Resevered |    Privacy & Policy |    Terms & Conditions</small>
+        </footer>
         
     </main>
     
