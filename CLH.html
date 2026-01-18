@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Learning Hub</title>
+</head>
+<body>
+    <header>
+        <img src="" alt=" Our learning hub"  />
+        <nav>
+            <!--Come back to set section IDs-->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to the Community Learning Hub</h1>
+        <p>The Community Learning Hub is a safe and inclusive space where people of all ages 
+            come together to learn new skills, share knowledge, and grow as a community.
+        </p>
+        <p>
+            Our mission is to provide accessible education through workshops, mentoring,
+            and collaborative learning opportunities.
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Our Community</h2>
+            <p>
+                Founded by passionate educators and volunteers, the Community Learning Hub 
+                focuses on practical learning experiences that empower individuals.
+            </p>
+            <p>
+                From digital skills to personal development, 
+                we believe education should be open, supportive, and community-driven.
+            </p>
+            <figure>
+                <img src="/image/learning hub.jpeg" alt="Group discussion and peer learning environment" />
+                <figcaption>Learning sessions at the Community Learning Hub</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Our Learning Programs</h2>
+            <article>
+                <h3>Web Development Basics</h3>
+                <time datetime="2026-01-18T12:21pm"></time>
+                <p>
+                    This program introduces learners to the fundamentals of web development, including HTML structure,
+                    semantic elements, and best practices. It is ideal for beginners with no prior coding experience.
+                </p>
+            </article>
+
+            <article>
+                <h3>Digital Literacy Training</h3>
+                <time datetime="2026-01-18T12:21pm"></time>
+                <p>
+                    Participants learn how to use computers, browse the internet safely, manage email accounts, 
+                    and utilize productivity tools for everyday tasks and professional growth.
+                </p>
+            </article>
+
+            <article>
+                <h3>Community Leadership Workshops</h3>
+                <time datetime="2026-01-18T12:21pm"></time>
+                <p>
+                    These workshops focus on communication skills, teamwork, leadership principles, 
+                    and community engagement to help individuals make a positive impact in their neighborhoods.
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Learning Resources Schedule</h2>
+            <table>
+                <caption>Weekly Community Learning Sessions</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Program</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Monday</td>
+                        <td>Web Development Basics</td>
+                        <td>10:00AM</td>
+                        <td>Computer Lab</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Tuesday</td>
+                        <td>Digital Literacy Training</td>
+                        <td>12:00PM</td>
+                        <td>Training Room A</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Wednesday</td>
+                        <td>Leadership Workshop</td>
+                        <td>2:00PM</td>
+                        <td>Conference Hall</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td scope="row">Friday</td>
+                        <td>Open Study Group</td>
+                        <td>4:00PM</td>
+                        <td>Library Room</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>Checkout Some Of Our Class Activities</h2>
+            <video controls>
+               <source src="/video/class video.mp4" type="video/mp4" />
+               The browser does not suppost this video format
+            </video>
+        </section>
+
+        <section>
+            <h2>Program Registration Form</h2>
+            <p>
+                Fill out the form below to register for any of our 
+                community learning programs. All fields marked as required must be completed.
+            </p>
+            <form action="#" method="post">
+                <label for="fname">Full Name:</label>
+                <input type="text" name="fname" id="fname" required /><br>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required /><br>
+                <label for="tel">Phone Number:</label>
+                <input type="tel" name="tel" id="tel" pattern="[0-9]{11}" required /><br>
+                <fieldset>
+                    <legend>Select Program</legend>
+                    <input type="checkbox" name="wdb" id="wdb" value="Web Development Basics" />
+                    <label for="wdb">Web Development Basics</label>
+                    <input type="checkbox" name="dlt" id="dlt" value="Digital Literacy Training" />
+                    <label for="dlt">Digital Literacy Training</label>
+                    <input type="checkbox" name="lw" id="lw" value="Leadership Workshop" />
+                    <label for="lw">Leadership Workshop</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Preferred Learning Mode</legend>
+                    <input type="radio" name="mode_radio" id="inper" value="In-person" />
+                    <label for="inper">In-Person</label>
+                    <input type="radio" name="mode_radio" id="onlin" value="Online" />
+                    <label for="onlin">Online</label>
+                </fieldset>
+                <br>
+                <label for="addc">Additional Comment</label><br>
+                <textarea name="addcomment" id="addc" rows="4" cols="40" maxlength="100" required ></textarea>
+                <br>
+                <button type="submit">Register Now</button>
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>
