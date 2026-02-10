@@ -11,13 +11,13 @@
         <nav>
             <!--Come back to set section IDs-->
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="#hme">Home</a></li>
+                <li><a href="#prg">Programs</a></li>
+                <li><a href="#rcs">Resources</a></li>
+                <li><a href="#reg">Register</a></li>
             </ul>
         </nav>
-        <h1>Welcome to the Community Learning Hub</h1>
+        <h1 id="hme">Welcome to the Community Learning Hub</h1>
         <p>The Community Learning Hub is a safe and inclusive space where people of all ages 
             come together to learn new skills, share knowledge, and grow as a community.
         </p>
@@ -48,7 +48,7 @@
             <h2>Our Learning Programs</h2>
             <article>
                 <h3>Web Development Basics</h3>
-                <time datetime="2026-01-18T12:21pm"></time>
+                <time datetime="2026-01-18T12:21">January 18, 2026 - 12:21 PM</time>
                 <p>
                     This program introduces learners to the fundamentals of web development, including HTML structure,
                     semantic elements, and best practices. It is ideal for beginners with no prior coding experience.
@@ -74,7 +74,7 @@
             </article>
         </section>
 
-        <section>
+        <section  id="prg">
             <h2>Learning Resources Schedule</h2>
             <table>
                 <caption>Weekly Community Learning Sessions</caption>
@@ -88,19 +88,19 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td scope="row">Monday</td>
+                        <td>Monday</td>
                         <td>Web Development Basics</td>
                         <td>10:00AM</td>
                         <td>Computer Lab</td>
                     </tr>
                     <tr>
-                        <td scope="row">Tuesday</td>
+                        <td>Tuesday</td>
                         <td>Digital Literacy Training</td>
                         <td>12:00PM</td>
                         <td>Training Room A</td>
                     </tr>
                     <tr>
-                        <td scope="row">Wednesday</td>
+                        <td>Wednesday</td>
                         <td>Leadership Workshop</td>
                         <td>2:00PM</td>
                         <td>Conference Hall</td>
@@ -108,7 +108,7 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td scope="row">Friday</td>
+                        <td>Friday</td>
                         <td>Open Study Group</td>
                         <td>4:00PM</td>
                         <td>Library Room</td>
@@ -117,15 +117,15 @@
             </table>
         </section>
 
-        <section>
+        <section id="rcs">
             <h2>Checkout Some Of Our Class Activities</h2>
             <video controls>
                <source src="/video/class video.mp4" type="video/mp4" />
-               The browser does not suppost this video format
+               The browser does not support this video format
             </video>
         </section>
 
-        <section>
+        <section id="reg">
             <h2>Program Registration Form</h2>
             <p>
                 Fill out the form below to register for any of our 
@@ -140,29 +140,52 @@
                 <input type="tel" name="tel" id="tel" pattern="[0-9]{11}" required /><br>
                 <fieldset>
                     <legend>Select Program</legend>
-                    <input type="checkbox" name="wdb" id="wdb" value="Web Development Basics" />
+                    <input type="checkbox" name="program[wdb]" id="wdb" value="Web Development Basics" />
                     <label for="wdb">Web Development Basics</label>
-                    <input type="checkbox" name="dlt" id="dlt" value="Digital Literacy Training" />
+                    <input type="checkbox" name="program[dlt]" id="dlt" value="Digital Literacy Training" />
                     <label for="dlt">Digital Literacy Training</label>
-                    <input type="checkbox" name="lw" id="lw" value="Leadership Workshop" />
+                    <input type="checkbox" name="program[lw]" id="lw" value="Leadership Workshop" />
                     <label for="lw">Leadership Workshop</label>
                 </fieldset>
                 <br>
                 <fieldset>
                     <legend>Preferred Learning Mode</legend>
-                    <input type="radio" name="mode_radio" id="inper" value="In-person" />
+                    <input type="radio" name="mode_radio" id="inper" value="In-person" required />
                     <label for="inper">In-Person</label>
-                    <input type="radio" name="mode_radio" id="onlin" value="Online" />
+                    <input type="radio" name="mode_radio" id="onlin" value="Online" required />
                     <label for="onlin">Online</label>
                 </fieldset>
                 <br>
-                <label for="addc">Additional Comment</label><br>
+                <label for="addc">Additional Comment*</label><br>
                 <textarea name="addcomment" id="addc" rows="4" cols="40" maxlength="100" required ></textarea>
                 <br>
                 <button type="submit">Register Now</button>
             </form>
-
         </section>
+
+        
+        <aside>
+            <ul>
+                <li>Learning Tips</li>
+                <li>Community Announcements</li>
+                <li>Quotes or Notices</li>
+            </ul>
+        </aside>
+        
     </main>
+    
+    <footer>
+        <nav>
+            <ul>
+                <li>Resources</li>
+                <li>Partners</li>
+            </ul>
+        </nav>
+        <address>
+            Done by emmapel <br>
+            Lagos
+        </address>
+        <p>&copy; 2026 Community Learning Hub. All rights reserved.</p>
+    </footer>
 </body>
 </html>
